@@ -1,4 +1,10 @@
 package com.lhz.service.impl;
 
-public class BooksServiceImpl {
+import org.springframework.stereotype.Service;
+
+@Service
+public class BooksServiceImpl implements  BooksSerciece {
+    public void saveUser() {
+        System.out.println("aaaaa");
+    }
 }

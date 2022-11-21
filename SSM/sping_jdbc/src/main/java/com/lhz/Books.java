@@ -1,4 +1,4 @@
-package com.lhz.pojo;
+package com.lhz;
 
 import lombok.*;
 

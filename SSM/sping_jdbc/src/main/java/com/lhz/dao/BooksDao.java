@@ -1,4 +1,9 @@
 package com.lhz.dao;
 
-public class BooksDao {
+public interface BooksDao {
+    Integer getBookPriceId(Integer bookId);
+
+    void updateStock(Integer bookId);
+
+    void updateBalance(Integer userId, Integer price);
 }
