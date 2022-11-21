@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/mybatis_cach/mybatis_cach.iml" filepath="$PROJECT_DIR$/SSM/mybatis_cach/mybatis_cach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/mybatis_parmeter/mybatis_parmeter.iml" filepath="$PROJECT_DIR$/SSM/mybatis_parmeter/mybatis_parmeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/mypatis/mypatis.iml" filepath="$PROJECT_DIR$/SSM/mypatis/mypatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/sping_jdbc/sping_jdbc.iml" filepath="$PROJECT_DIR$/SSM/sping_jdbc/sping_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/springAnnoation/springAnnoation.iml" filepath="$PROJECT_DIR$/SSM/springAnnoation/springAnnoation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/springFuXi/springFuXi.iml" filepath="$PROJECT_DIR$/SSM/springFuXi/springFuXi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/springMvc/springMvc.iml" filepath="$PROJECT_DIR$/SSM/springMvc/springMvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/springRestf/springRestf.iml" filepath="$PROJECT_DIR$/SSM/springRestf/springRestf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/spring_AOP/spring_AOP.iml" filepath="$PROJECT_DIR$/SSM/spring_AOP/spring_AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/spring_mvc_demo/spring_mvc_demo.iml" filepath="$PROJECT_DIR$/SSM/spring_mvc_demo/spring_mvc_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/ssm_zhenghe/ssm_zhenghe.iml" filepath="$PROJECT_DIR$/SSM/ssm_zhenghe/ssm_zhenghe.iml" />
+    </modules>
+  </component>
+</project>

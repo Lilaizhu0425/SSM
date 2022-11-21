@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springRestf:war">
+    <output-path>$PROJECT_DIR$/SSM/springRestf/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springRestf</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springRestf-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springRestf:war exploded" />
+    </root>
+  </artifact>
+</component>

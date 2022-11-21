@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springRestf" />
+        <module name="springMvc" />
+        <module name="springFuXi" />
+        <module name="spring_AOP" />
+        <module name="mybatis_parmeter" />
+        <module name="sping_jdbc" />
+        <module name="mypatis" />
+        <module name="springAnnoation" />
+        <module name="mybatis_cach" />
+        <module name="ssm_zhenghe" />
+        <module name="spring_mvc_demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis_cach" target="1.5" />
+      <module name="mybatis_parmeter" target="8" />
+      <module name="mypatis" target="1.5" />
+      <module name="sping_jdbc" target="1.5" />
+      <module name="spring_AOP" target="6" />
+      <module name="spring_mvc_demo" target="1.5" />
+      <module name="springAnnoation" target="1.5" />
+      <module name="springFuXi" target="1.5" />
+      <module name="springMvc" target="1.5" />
+      <module name="springRestf" target="1.5" />
+      <module name="springRestful" target="1.5" />
+      <module name="SSM" target="1.5" />
+      <module name="ssm_zhenghe" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

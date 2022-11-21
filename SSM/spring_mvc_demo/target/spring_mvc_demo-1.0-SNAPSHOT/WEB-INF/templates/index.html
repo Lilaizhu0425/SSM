@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>aaa</h1>
+<a th:href="@{/text/down}">下载图片</a>
+<form th:action="@{/test/up}" method="post" enctype="multipart/form-data">
+    头像<input type="file" name="photo">
+    <input type="submit" value="上传">
+</form>
+
+<form th:action="@{/parm/servletAPI}" method="post">
+
+    用户名:<input type="text" name="userName">
+        <input type="submit" value="登录">
+
+
+</form>
+<a th:href="@{/test/mav}">测试通过modeandView</a>
+<a th:href="@{/test/session}">测试通过sessionmodeandView</a>
+<a th:href="@{/test/yu}">测试通过yumodeandView</a>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <typeAliases>
+        <!--alias可以不写默认是类的名字且不区分大小写-->
+        <!--
+        <typeAlias type="com.lhz.mybatis.pojo.Books" alias="books"></typeAlias>
+-->
+        <package name="com.lhz.pojo"/><!--通过包来设置别名-->
+    </typeAliases>
+    <plugins>
+        <!--配置分页插件-->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+
+
+
+
+    <!--引入映射文件-->
+    <mappers>
+        <!--  <mapper resource="mappers/BooksMapper.xml" />-->
+        <package name="com.lhz.mapper"/>
+    </mappers>
+
+</configuration>
