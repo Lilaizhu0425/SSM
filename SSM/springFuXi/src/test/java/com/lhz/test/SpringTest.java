@@ -22,6 +22,8 @@ public class SpringTest {
         System.out.println(asr);
         Books books = (Books) classPathXmlApplicationContext.getBean("books");
         System.out.println(books.toString());
+     System.out.println(as);
+
 
     }
 }

@@ -8,7 +8,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
     <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
-    <context:component-scan base-package="com.lhz">
+    <context:component-scan base-package="com.lhz.service">
 <!--
         <context:exclude-filter type="assignable" expression="com.lhz.controller.BooksController"/>
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
@@ -22,6 +22,9 @@
         <property name="password" value="${jdbc.password}"/>
 
     </bean>
-    <bean id="booksSaaerviceImpl" class="com.lhz.service.impl.BooksServiceImpl"></bean>
+    <bean id="booksSaaerviceImpl" class="com.lhz.service.impl.BooksServiceImpl" autowire="byType"></bean>
+    <bean id="booksController" class="com.lhz.controller.BooksController">
+        <property name="booksSerciece" ref="booksSaaerviceImpl"></property>
+    </bean>
 
 </beans>

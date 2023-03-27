@@ -16,6 +16,7 @@
         <module>spring_mvc_demo</module>
         <module>springRestf</module>
         <module>ssm_zhenghe</module>
+        <module>mvctest</module>
 
     </modules>
 

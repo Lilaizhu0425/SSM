@@ -6,4 +6,8 @@
     <!--int insertUser();-->
 
 
+    <update id="inserBoos"></update>
+    <select id="selectAll" resultType="com.lhz.mybatis.pojo.Books">
+        select *  from  tbl_book
+    </select>
 </mapper>

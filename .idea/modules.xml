@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SSM/SSM.iml" filepath="$PROJECT_DIR$/SSM/SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSM/mvctest/mvctest.iml" filepath="$PROJECT_DIR$/SSM/mvctest/mvctest.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM/mybatis_cach/mybatis_cach.iml" filepath="$PROJECT_DIR$/SSM/mybatis_cach/mybatis_cach.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM/mybatis_parmeter/mybatis_parmeter.iml" filepath="$PROJECT_DIR$/SSM/mybatis_parmeter/mybatis_parmeter.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM/mypatis/mypatis.iml" filepath="$PROJECT_DIR$/SSM/mypatis/mypatis.iml" />

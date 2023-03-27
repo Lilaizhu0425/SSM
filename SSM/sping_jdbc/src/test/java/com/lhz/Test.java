@@ -1,5 +1,9 @@
 package com.lhz;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.JSONPObject;
+import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +15,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.StringUtils;
+import sun.misc.BASE64Decoder;
+import sun.misc.BASE64Encoder;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
@@ -32,9 +38,10 @@ public class Test {
         Books books = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Books>(Books.class), 1);
 
         Map<String, Object> map = jdbcTemplate.queryForMap(sql, 1);
-        List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql, 1);
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from tbl_book");
+        String s = JSON.toJSONString(maps);
 
-        System.out.println(maps.toString());
+        System.out.println(s);
         System.out.println(books);
     }
     @org.junit.Test
@@ -68,6 +75,77 @@ public class Test {
          *
          */
 
+    }
+    @org.junit.Test
+    public void  test9(){
+        try {
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put(null,null);
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+
+
+    }
+    @org.junit.Test
+    public void test10() throws IOException, Base64DecodingException {
+        InputStream resourceAsStream = Test.class.getClassLoader().getResourceAsStream("jdbc.properties");
+        Properties properties = new Properties();
+        properties.load(resourceAsStream);
+        System.out.println(properties.getProperty("token"));
+        BASE64Decoder decoder = new BASE64Decoder();
+        BASE64Encoder encoder = new BASE64Encoder();
+
+        String s="123:123";
+        byte[] bytes1 = s.getBytes();
+
+        String encode = encoder.encode(bytes1);
+
+        System.out.println(encode);
+        HashMap<String, Integer> stringIntegerHashMap = new HashMap<String, Integer>();
+
+        String code=null;
+
+
+        System.out.println(code.equals("0"));
+
+
+
+    }
+    @org.junit.Test
+    public  void  test101(){
+
+        ArrayList<String> arrayList = new ArrayList<String>();
+        arrayList.add("aa");
+        arrayList.add("bb");
+        arrayList.add("cc");
+        arrayList.add("dd");
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("'");
+        String join = String.join("','", arrayList);
+
+        stringBuffer.append(join);
+        stringBuffer.append("'");
+        String sqlUnitTeam="update dacp_datastash_unit set member_name=? , lastupd=now() , team_name=?" +
+                " where unit_code in ("+ stringBuffer.toString()+")";
+        System.out.println(sqlUnitTeam);
+
+    }
+    @org.junit.Test
+    public void test02(){
+
+            String hzName = "hahha.txt".substring("hahha.txt".lastIndexOf("."));
+            System.out.println(hzName);
+
+
+    }
+    @org.junit.Test
+    public void test03(){
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put("name","lihaizhu");
+        System.out.println(hashMap);
     }
 
 

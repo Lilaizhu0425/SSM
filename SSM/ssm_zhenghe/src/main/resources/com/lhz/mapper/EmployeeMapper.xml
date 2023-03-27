@@ -6,8 +6,8 @@
     <!--int insertUser();-->
 
 
-    <select id="getAllEmployee" resultType="com.lhz.pojo.Emlopee">
+   <!-- <select id="getAllEmployee" resultType="com.lhz.pojo.Emlopee">
 
         select * from t_emp
-    </select>
+    </select>-->
 </mapper>

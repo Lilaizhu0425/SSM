@@ -6,11 +6,16 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+
 @Component
 public class FirstInterceptor implements HandlerInterceptor {
 
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-
+        String contextPath = request.getContextPath();
+        String realPath = request.getServletContext().getRealPath("springmvc.xml");
+        System.out.println(realPath);
+        System.out.println(contextPath);
         System.out.println("开始之前");
         return true;
     }

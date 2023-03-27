@@ -37,9 +37,10 @@
     <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <property name="exceptionMappings" >
             <props>
-                <prop key=""></prop>
+                <prop key="">error</prop>
             </props>
         </property>
+        <property name="exceptionAttribute" value="ex"></property>
     </bean>
 
 </beans>

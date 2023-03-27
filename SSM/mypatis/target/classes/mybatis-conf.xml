@@ -26,7 +26,6 @@
     </environments>
     <!--引入映射文件-->
     <mappers>
-      <!--  <mapper resource="mappers/BooksMapper.xml" />-->
-        <package name=""/>
+        <package name="com.lhz.mybatis.mapper"/>
     </mappers>
 </configuration>

@@ -2,6 +2,7 @@ package com.lhz.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.lhz.controller.EmpController;
 import com.lhz.mapper.EmployeeMapper;
 import com.lhz.pojo.Emlopee;
 import com.lhz.service.EmployeeService;
@@ -17,8 +18,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
     EmployeeMapper employeeMapper;
+
     public List<Emlopee> getAllEmployee() {
         List<Emlopee> lie =employeeMapper.getAllEmployee();
+        EmpController empController = new EmpController();
+        empController.test();
         return lie;
     }
 
